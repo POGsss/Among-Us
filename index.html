@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+		<meta name="theme-color" content="#080808">
+		<meta name="msapplication-navbutton-color" content="#080808">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="Css/style.css">
+  <title>Among us</title>
+ </head>
+ <body>
+  <div id="loader"></div>
+  <div id="loader1"></div>
+  <div id="modal1">
+   <div class="modal">
+    <button class="close" onclick="cls1()"><i class="fa fa-close"></i></button>
+     <div class="box">
+       <h1 class="head">PAALALA</h1>
+       <p>Salamat sa paalala</p>
+       <div class="social">
+        <i class="fa fa-facebook-square"></i>
+        <i class="fa fa-youtube-square"></i>
+       </div>
+     </div>
+   </div>
+  </div>
+  <div id="modal2">
+   <div class="modal">
+    <button class="close" onclick="cls2()"><i class="fa fa-close"></i></button>
+     <div class="box">
+       <h1 class="head">ARTISTS</h1>
+       <p>Frankie B Pinat</p>
+       <h1 class="head">PROGRAMMER</h1>
+       <p>Frankie B Pinat</p>
+       <div class="social">
+        <i class="fa fa-facebook-square"></i>
+        <i class="fa fa-youtube-square"></i>
+       </div>
+     </div>
+   </div>
+  </div>
+  <div id="modal3">
+   <div class="modal">
+    <button class="close" onclick="cls3()"><i class="fa fa-close"></i></button>
+     <div class="box">
+       <h1 class="head">HOOOOY</h1>
+       <p>Wala kong mailagay dto basta pindutin mo nalang tong button sa baba para mapunta ka sakin, 
+       este sa home screen.</p>
+       <button class="alis" onclick="leaving()">Umalis sa laro</button>
+     </div>
+   </div>
+  </div>
+  <div id="home">
+   <video autoplay muted loop id="background">
+    <source src="Assets/bg.mp4" type="video/mp4">
+   </video>
+   <div id="titleBox">
+    <h1 id="title">SA GITNA NATIN</h1>
+   </div>
+   <div id="linkBox">
+    <button id="play" onclick="forward()">MAGLARO</button>
+    <div id="linkInner">
+     <button class="link" onclick="frst()"><i class="fa fa-exclamation"></i></button>
+     <button class="link" onclick="scnd()"><i class="fa fa-cog"></i></button>
+     <button class="link"><i class="fa fa-facebook"></i></button>
+    </div>
+   </div>
+  </div>
+  <div id="home2">
+   <video autoplay muted loop id="background">
+    <source src="Assets/bg.mp4" type="video/mp4">
+   </video>
+   <div id="inputBox">
+    <input type="text" placeholder="Pangalan mo" id="name">
+   </div>
+   <div id="cGame">
+    <div class="logo">
+    </div>
+    <h1 class="host">HOST</h1>
+    <button class="create" onclick="playing()">GUMAWA NG LARO</button>
+   </div>
+   <div id="available">
+    <p style="color: white;">wala kang jowa.</p>
+   </div>
+   <button class="back" onclick="backward()">Back</button>
+  </div>
+  <div id="game">
+   <video autoplay muted loop id="background1">
+    <source src="Assets/bg1.mp4" type="video/mp4">
+   </video>
+   <div class="dPad">
+    <button class="up" onclick="moveU()" ><i class="fa fa-chevron-up"></i></button>
+    <button class="right" onclick="moveR()" ><i class="fa fa-chevron-right"></i></button>
+    <button class="down" onclick="moveD()" ><i class="fa fa-chevron-down"></i></button>
+    <button class="left" onclick="moveL()"><i class="fa fa-chevron-left"></i></button>
+    <button class="center"></button>
+   </div>
+   <div id="mapBox">
+    <div class="map">
+     <img class="mapC" src="Assets/map.png">
+     <img class="mapC1" src="Assets/map1.png">
+    </div>
+    <div class="character">
+     <p class="charName">PINATs</p>
+     <img class="characterC" src="Assets/char.png">
+    </div>
+   </div>
+   <button class="quit" onclick="thrd()"><i class="fa fa-cog"></button>
+  </div>
+  <label class="credit">©Frankie B Pinat</label>
+  <script src="Javascript/main.js"></script>
+ </body>
+</html>
